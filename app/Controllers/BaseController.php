@@ -56,11 +56,16 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
     }
 
-    public function vista($ruta, $datos =''){
-        $header = view('layouts/header');
-        $contenido =  view($ruta, $datos);
-        $footer = view('layouts/footer');
-
-        return $header . $contenido . $footer;
+    // Método para cargar vista con header y footer
+    public function vista($view, $vars = [])
+    {
+        // Cargar el header con las variables necesarias
+        echo view('layouts/header', ['urlapp' => base_url()]);
+        
+        // Cargar la vista principal que pasas como parámetro
+        echo view($view, $vars);
+        
+        // Cargar el footer
+        echo view('layouts/footer');
     }
 }

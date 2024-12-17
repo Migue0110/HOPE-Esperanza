@@ -68,7 +68,7 @@ class Controller
      * @var ValidationInterface|null
      */
     protected $validator;
-
+    
     /**
      * Constructor.
      *
