@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
+<script>
+    var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
+</script>
+
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
@@ -24,6 +28,7 @@
                 <input name="correo" type="email" placeholder="Correo">
                 <input name="contrasena" type="password" placeholder="Contraseña">
                 <input name="confirmar_contrasena" type="password" placeholder="Confirmar contraseña">
+                <input name="edad" type="number" placeholder="Edad">
                 <button class="mt-3" type="submit">Registrarse</button>
             </form>
         </div>
@@ -67,4 +72,5 @@
 <script src="<?php echo RUTA_BASE; ?>assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="<?php echo RUTA_BASE; ?>assets/js/login.js"></script>

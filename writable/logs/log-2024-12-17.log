@@ -54,3 +54,95 @@ in SYSTEMPATH\Common.php on line 1166.
  4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:05:34 --> Error: Undefined constant "FOPEN_WRITE_CREATE"
+in SYSTEMPATH\Helpers\url_helper.php on line 540.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:06:56 --> Error: Undefined constant "FOPEN_WRITE_CREATE"
+in SYSTEMPATH\Helpers\url_helper.php on line 540.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:07:13 --> Error: Undefined constant "FOPEN_WRITE_CREATE"
+in SYSTEMPATH\Helpers\url_helper.php on line 540.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:08:42 --> Error: Undefined constant "FILE_WRITE_MODE"
+in SYSTEMPATH\Helpers\url_helper.php on line 552.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:10:01 --> Error: Call to undefined function log_mesage()
+in SYSTEMPATH\Helpers\url_helper.php on line 532.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:10:27 --> Error: Call to undefined function log_mesage()
+in SYSTEMPATH\Helpers\url_helper.php on line 532.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:10:47 --> Error: Call to undefined function log_mesage()
+in SYSTEMPATH\Helpers\url_helper.php on line 532.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:10:56 --> Error: Call to undefined function log_mesage()
+in SYSTEMPATH\Helpers\url_helper.php on line 532.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:11:10 --> Error: Call to undefined function log_mesage()
+in SYSTEMPATH\Helpers\url_helper.php on line 532.
+ 1 APPPATH\Controllers\Usuarios.php(20): console('nn')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:24:15 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\Usuarios_model.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(35): App\Models\Usuarios_model->registrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:26:00 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\Usuarios_model.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(35): App\Models\Usuarios_model->registrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:26:41 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\Usuarios_model.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(35): App\Models\Usuarios_model->registrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 02:27:11 --> ErrorException: Undefined variable $data
+in APPPATH\Models\Usuarios_model.php on line 19.
+ 1 APPPATH\Models\Usuarios_model.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\hope\\app\\Models\\Usuarios_model.php', 19)
+ 2 APPPATH\Controllers\Usuarios.php(35): App\Models\Usuarios_model->registrar([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuarios->registrar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -24,3 +24,6 @@
 <script src="<?php echo RUTA_BASE; ?>assets/js/tabs.js"></script>
 <script src="<?php echo RUTA_BASE; ?>assets/js/popup.js"></script>
 <script src="<?php echo RUTA_BASE; ?>assets/js/custom.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

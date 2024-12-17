@@ -14,22 +14,26 @@ $(function () {
     $(document).on('submit', '#formulario-registro', function (e) {
         e.preventDefault();
         $.ajax({
-            url: IP_SERVER + 'Usuarios/registrar',
+            url: RUTA_PUBLICA + 'usuarios/registrar',
             type: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
             success: function (data) {
                 if (data.resp == 1) {
-
+                    Swal.fire({
+                        icon: "success",
+                        title: "Correcto",
+                        html: data.msg,
+                    });
+                    $('#formulario-registro')[0].reset();
                 } else {
                     Swal.fire({
                         icon: "error",
                         title: "Error",
-                        html: data.mensaje,
-                      });
+                        html: "Error al registrar usuario",
+                    });
                 }
             }
         })
     })
-
 })

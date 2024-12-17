@@ -65,7 +65,9 @@ ul, li {
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 </head>
-
+    <script>
+        var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
+    </script>
 
 <header class="header-area header-sticky">
     <div class="container">

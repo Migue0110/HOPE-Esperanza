@@ -14,7 +14,8 @@
  | existing namespaces of App\* namespaced-classes.
  */
 defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
-
+defined('FILE_WRITE_MODE') || define('FILE_WRITE_MODE', 0666);
+defined('FOPEN_WRITE_CREATE') || define('FOPEN_WRITE_CREATE', 'ab');
 /*
  | --------------------------------------------------------------------------
  | Composer Path
