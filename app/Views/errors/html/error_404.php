@@ -3,25 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title><?= lang('Errors.pageNotFound') ?></title>
+    <link rel="icon" href="<?php echo RUTA_BASE; ?>assets/imagenes/hope_icon.png">
+    <link rel="stylesheet" href="<?php echo RUTA_BASE; ?>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo RUTA_BASE; ?>assets/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
-        div.logo {
-            height: 200px;
-            width: 155px;
-            display: inline-block;
-            opacity: 0.08;
-            position: absolute;
-            top: 2rem;
-            left: 50%;
-            margin-left: -73px;
-        }
         body {
             height: 100%;
-            background: #fafafa;
+            background:rgb(246, 232, 232);
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             color: #777;
             font-weight: 300;
         }
+
         h1 {
             font-weight: lighter;
             letter-spacing: normal;
@@ -30,55 +25,57 @@
             margin-bottom: 0;
             color: #222;
         }
-        .wrap {
+
+        .container {
             max-width: 1024px;
-            margin: 5rem auto;
+            margin: auto;
             padding: 2rem;
-            background: #fff;
             text-align: center;
-            border: 1px solid #efefef;
-            border-radius: 0.5rem;
             position: relative;
         }
-        pre {
-            white-space: normal;
-            margin-top: 1.5rem;
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
         }
-        code {
-            background: #fafafa;
-            border: 1px solid #efefef;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            display: block;
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
         }
-        p {
-            margin-top: 1.5rem;
+
+        /* Animación de gota */
+        .drop-animation {
+            width: 150px;
+            animation: drop 2s infinite ease-in-out;
         }
-        .footer {
-            margin-top: 2rem;
-            border-top: 1px solid #efefef;
-            padding: 1em 2em 0 2em;
-            font-size: 85%;
-            color: #999;
-        }
-        a:active,
-        a:link,
-        a:visited {
-            color: #dd4814;
+
+        @keyframes drop {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(15px);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <h1>404</h1>
-
-        <p>
-            <?php if (ENVIRONMENT !== 'production') : ?>
-                <?= nl2br(esc($message)) ?>
-            <?php else : ?>
-                <?= lang('Errors.sorryCannotFind') ?>
-            <?php endif; ?>
-        </p>
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="text-center">
+            <!-- Imagen con animación -->
+            <img src="<?php echo RUTA_BASE; ?>assets/imagenes/404_icon.png" alt="404 Icon" class="drop-animation">
+            <br>
+            <br>
+            <br>
+            <h1 class="mt-3">¡Ups! Página no encontrada</h1>
+            <p class="text-muted">Lo sentimos, no pudimos encontrar la página que estás buscando.</p>
+            <p>¿Quizás te gustaría regresar a la página principal?</p>
+            <a href="<?php echo RUTA_BASE; ?>public/pagina_principal" class="btn btn-primary mt-3">
+                <i class="bi bi-house-door"></i> Ir a Inicio
+            </a>
+        </div>
     </div>
 </body>
 </html>
+

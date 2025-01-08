@@ -47,7 +47,6 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <!-- <img src="<?php echo RUTA_BASE; ?>assets/imagenes/hope_icon.png" alt="" width="300px"> -->
                     <h1>¡Bienvenid@ de vuelta!</h1>
                     <p>¡Para mantenerte conectad@ con nosotros por favor ingresa con tu cuenta registrada!</p>
                     <button class="ghost" id="signIn">Ingresar</button>

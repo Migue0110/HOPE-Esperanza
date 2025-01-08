@@ -1,0 +1,90 @@
+CRITICAL - 2024-12-28 20:20:54 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-01.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:54 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-02.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:54 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-03.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:55 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-01.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:55 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-02.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:55 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: assets/images/country-03.jpg\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:20:57 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: about.html\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:21:37 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: error_404\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:21:42 --> ErrorException: Undefined variable $message
+in APPPATH\Views\errors\html\error_404.php on line 77.
+ 1 APPPATH\Views\errors\html\error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\hope\\app\\Views\\errors\\html\\error_404.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH\Config\Routes.php(22): view('errors/html/error_404')
+ 6 SYSTEMPATH\CodeIgniter.php(961): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'get: error_404.php\'.')
+ 7 SYSTEMPATH\CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

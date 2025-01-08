@@ -362,6 +362,7 @@ Header Style
 }
 
 .header-area .main-nav .logo {
+  filter: brightness(0) invert(1);
   flex-basis: 30%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -370,8 +371,8 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
-  width: 159px;
-  margin-top: 15px;
+  width: 150px;
+  margin-top: 0px;
 }
 
 .background-header .main-nav .logo img {
@@ -747,11 +748,11 @@ Banner Style
 #section-1 .more-info {
   margin-top: 60px;
   background-color: #fff;
-  padding: 30px 60px;
-  border-radius: 61px;
+  padding: 5px 10px;
+  border-radius: 100px;
   position: absolute;
-  width: 80%;
-  left: 10%;
+  width: 50%;
+  left: 25%;
   bottom: 130px;
   display: inline-block;
 }
@@ -765,12 +766,11 @@ Banner Style
   line-height: 58px;
   border: 1px solid #22b3c1;
   border-radius: 50%;
-  float: left;
   margin-right: 20px;
 }
 #section-1 .more-info h4 {
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   color: #22b3c1;
   font-weight: 700;
   line-height: 28px;
@@ -782,7 +782,7 @@ Banner Style
 }
 #section-1 .main-button {
   margin-top: 8px;
-  text-align: right;
+  text-align: relative;
 }
 #section-1 .main-button a:hover {
   background-color: #22b3c1;
@@ -818,19 +818,19 @@ Banner Style
   transition: 0.3s;
 }
 #section-1 .content-slider .slider #top-banner-1 {
-  background: url('../images/banner-01.jpg') no-repeat center center;
+  background: url('../imagenes/banner-01.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-2 {
-  background: url('../images/banner-02.jpg') no-repeat center center;
+  background: url('../imagenes/banner-02.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-3 {
-  background: url('../images/banner-03.jpg') no-repeat center center;
+  background: url('../imagenes/banner-03.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-4 {
-  background: url('../images/banner-04.jpg') no-repeat center center;
+  background: url('../imagenes/banner-04.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider nav {
@@ -1822,6 +1822,7 @@ body .options .option .label .info .sub {
 
 .best-locations .main-button {
   margin-top: 60px;
+  justify-content: flex-end;
 }
 
 .best-locations .main-button a:hover {
@@ -2258,7 +2259,7 @@ body {
     margin-bottom: 15px;
   }
   #section-1 .main-button {
-    text-align: left;
+    text-align: center;
   }
   #section-1 .content-slider nav .controls label {
     width: 15%;
