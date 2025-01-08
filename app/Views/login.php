@@ -29,6 +29,7 @@
                 <input name="contrasena" type="password" placeholder="Contraseña">
                 <input name="confirmar_contrasena" type="password" placeholder="Confirmar contraseña">
                 <input name="edad" type="number" placeholder="Edad">
+                <input name="telefono" type="number" placeholder="Telefono">
                 <button class="mt-3" type="submit">Registrarse</button>
             </form>
         </div>

@@ -6,82 +6,12 @@
         <input type="radio" id="banner4" class="sec-1-input" name="banner">
         <div class="slider">
             <div id="top-banner-1" class="banner">
-                <div class="banner-inner-wrapper header-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="more-info">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-sm-6 col-6">
-                                            <div class="main-button">
-                                                <a href="about.html">Modulo Calendario</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div id="top-banner-2" class="banner">
-                <div class="banner-inner-wrapper header-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="more-info">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-sm-6 col-6">
-                                            <div class="main-button">
-                                                <a href="about.html">Modulo Analizador de Textos</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div id="top-banner-3" class="banner">
-                <div class="banner-inner-wrapper header-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="more-info">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-sm-6 col-6">
-                                            <div class="main-button">
-                                                <a href="about.html">Modulo Test de Burns</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div id="top-banner-4" class="banner">
-                <div class="banner-inner-wrapper header-text">
-                    <div class="main-caption">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="more-info">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-sm-6 col-6">
-                                            <div class="main-button">
-                                                <a href="about.html">Modulo Autoayuda</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <nav>

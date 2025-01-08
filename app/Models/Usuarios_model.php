@@ -8,7 +8,7 @@ class Usuarios_model extends Model
 {
 
     protected $table = 'usuarios';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_usuario';
 
     /**
      * ? Funcion para registrar un usuario en la base de datos

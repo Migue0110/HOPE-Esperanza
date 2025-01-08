@@ -18,14 +18,16 @@ class Usuarios extends BaseController
           $correo = $this->request->getPost('correo');
           $contrasena = $this->request->getPost('contrasena');
           $confirmarContrasena = $this->request->getPost('confirmar_contrasena');
-          $edad = $this->request->getPost('edad'); 
+          $edad = $this->request->getPost('edad');
+          $telefono = $this->request->getPost('telefono');
           
           //? Crear el objeto con los datos
           $datos = [
-               'nombre' => $nombre,
+               'nombre_usuario' => $nombre,
                'correo' => $correo,
                'contrasena' => $contrasena,
-               'edad' => $edad
+               'edad' => $edad,
+               'telefono' => $telefono
           ];
 
           //? Crear el objeto del modelo
