@@ -1,3 +1,5 @@
+<!-- Inicio Carrusel -->
+
 <section id="section-1">
     <div class="content-slider">
         <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
@@ -29,127 +31,97 @@
     </div>
 </section>
 
+<!-- Fin Carrusel -->
 
-<div class="visit-country">
+
+<!-- Que es HOPE? -->
+
+<section class="que-es-hope">
+    <h2>¿Qué es HOPE?</h2>
+    <p>HOPE es una plataforma diseñada para apoyar el autocuidado emocional, ayudándote a combatir la depresión y la
+        ansiedad con herramientas personalizadas.</p>
+    <div class="features">
+        <div class="feature">
+            <img src="<?php echo RUTA_BASE; ?>assets/imagenes/seguimiento del bienestar.jpg"
+                alt="Seguimiento del bienestar">
+            <h3>Seguimiento de tu bienestar</h3>
+            <p>Registra y analiza tu estado de ánimo para comprender tus emociones.</p>
+        </div>
+        <div class="feature">
+            <img src="<?php echo RUTA_BASE; ?>assets/imagenes/recursos personalizados.png"
+                alt="Recursos personalizados">
+            <h3>Recursos personalizados</h3>
+            <p>Accede a música, libros y consejos adaptados a tus necesidades emocionales.</p>
+        </div>
+        <div class="feature">
+            <img src="<?php echo RUTA_BASE; ?>assets/imagenes/tests y contactos.png" alt="tests y contactos">
+            <h3>Test y contactos</h3>
+            <p>Conecta con tus personas de confianza y realiza test que pueden ayudarte en tu camino hacia el bienestar.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Fin de Que es HOPE? -->
+
+<!-- Inicio Sección de Módulos -->
+
+<div class="modules-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="section-heading">
-                    <h2>Visit One Of Our Countries Now</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore.</p>
-                </div>
-            </div>
+        <div class="section-heading text-center">
+            <h2>Explora los Módulos de HOPE</h2>
+            <p>Descubre las herramientas que HOPE ofrece para el cuidado emocional y bienestar personal.</p>
         </div>
         <div class="row">
-            <div class="col-lg-8">
-                <div class="items">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-5">
-                                        <div class="image">
-                                            <img src="assets/images/country-01.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-7">
-                                        <div class="right-content">
-                                            <h4>SWITZERLAND</h4>
-                                            <span>Europe</span>
-                                            <div class="main-button">
-                                                <a href="about.html">Explore More</a>
-                                            </div>
-                                            <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your
-                                                website. You can use this layout for your commercial work.</p>
-                                            <ul class="info">
-                                                <li><i class="fa fa-user"></i> 8.66 Mil People</li>
-                                                <li><i class="fa fa-globe"></i> 41.290 km2</li>
-                                                <li><i class="fa fa-home"></i> $1.100.200</li>
-                                            </ul>
-                                            <div class="text-button">
-                                                <a href="about.html">Need Directions ? <i
-                                                        class="fa fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-5">
-                                        <div class="image">
-                                            <img src="assets/images/country-02.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-7">
-                                        <div class="right-content">
-                                            <h4>CARIBBEAN</h4>
-                                            <span>North America</span>
-                                            <div class="main-button">
-                                                <a href="about.html">Explore More</a>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod.</p>
-                                            <ul class="info">
-                                                <li><i class="fa fa-user"></i> 44.48 Mil People</li>
-                                                <li><i class="fa fa-globe"></i> 275.400 km2</li>
-                                                <li><i class="fa fa-home"></i> $946.000</li>
-                                            </ul>
-                                            <div class="text-button">
-                                                <a href="about.html">Need Directions ? <i
-                                                        class="fa fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="item last-item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-5">
-                                        <div class="image">
-                                            <img src="assets/images/country-03.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-sm-7">
-                                        <div class="right-content">
-                                            <h4>FRANCE</h4>
-                                            <span>Europe</span>
-                                            <div class="main-button">
-                                                <a href="about.html">Explore More</a>
-                                            </div>
-                                            <p>We hope this WoOx template is useful for you, please support us a <a
-                                                    href="https://paypal.me/templatemo" target="_blank">small amount of
-                                                    PayPal</a> to info [at] templatemo.com for our survival. We really
-                                                appreciate your contribution.</p>
-                                            <ul class="info">
-                                                <li><i class="fa fa-user"></i> 67.41 Mil People</li>
-                                                <li><i class="fa fa-globe"></i> 551.500 km2</li>
-                                                <li><i class="fa fa-home"></i> $425.600</li>
-                                            </ul>
-                                            <div class="text-button">
-                                                <a href="about.html">Need Directions ? <i
-                                                        class="fa fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <ul class="page-numbers">
-                                <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li class="active"><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#"><i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                        </div>
+            <!-- Módulo 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="module-card">
+                    <div class="image">
+                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/module-01.jpg" alt="Módulo 1">
+                    </div>
+                    <div class="content">
+                        <h4>Seguimiento de Ánimo</h4>
+                        <p>Registra tus emociones diarias y obtén un análisis de tus patrones emocionales.</p>
+                        <a href="#" class="btn btn-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Módulo 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="module-card">
+                    <div class="image">
+                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/module-02.jpg" alt="Módulo 2">
+                    </div>
+                    <div class="content">
+                        <h4>Análisis de pensamientos</h4>
+                        <p>Reflexiona sobre tus pensamientos y analiza lo que transmiten</p>
+                        <a href="#" class="btn btn-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Módulo 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="module-card">
+                    <div class="image">
+                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/module-03.jpg" alt="Módulo 3">
+                    </div>
+                    <div class="content">
+                        <h4>Test de Ansiedad y Depresión de Burns</h4>
+                        <p>Accede y realiza los test para conocer tu situación actual</p>
+                        <a href="#" class="btn btn-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Módulo 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="module-card">
+                    <div class="image">
+                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/module-04.jpg" alt="Módulo 4">
+                    </div>
+                    <div class="content">
+                        <h4>Recursos de Autoayuda</h4>
+                        <p>Accede a libros, música y recursos para mejorar tu bienestar emocional.</p>
+                        <a href="#" class="btn btn-primary">Explorar</a>
                     </div>
                 </div>
             </div>
@@ -157,18 +129,18 @@
     </div>
 </div>
 
-<div class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <h2>Are You Looking To Travel ?</h2>
-                <h4>Make A Reservation By Clicking The Button</h4>
-            </div>
-            <div class="col-lg-4">
-                <div class="border-button">
-                    <a href="reservation.html">Book Yours Now</a>
-                </div>
-            </div>
-        </div>
+<!-- Fin Sección de Módulos -->
+
+<!-- Inicio invitacion registro -->
+
+<section class="registro-invitacion">
+    <div class="registro-contenedor">
+        <h2> Únete a HOPE 💙 </h2>
+        <p>Regístrate y da el primer paso hacia un espacio seguro y lleno de esperanza. Juntos, podemos encontrar las
+            herramientas que te ayuden a recuperar tu luz.</p>
+        <a href="#" class="btn btn-primary">🌟 Unirme a HOPE 🌟</a>
+        <p class="nota">💌 *Tu información estará segura y solo se usará para brindarte apoyo personalizado.</p>
     </div>
-</div>
+</section>
+
+<!-- Fin invitacion registro -->

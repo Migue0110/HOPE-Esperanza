@@ -34,7 +34,7 @@ var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="<?php echo RUTA_BASE; ?>public/pagina_principal" class="logo">
-                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/HOPE_PP.png" alt="">
+                        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/HOPE_pp.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->

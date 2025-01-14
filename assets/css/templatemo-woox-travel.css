@@ -323,7 +323,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #22b3c1 !important;
+  background-color: #358ac7 !important;
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
@@ -337,7 +337,7 @@ Header Style
 }
 
 .header-area {
-  background-color: #22b3c1;
+  background-color: #358ac7;
   position: absolute;
   height: 70px;
   top: 0;
@@ -608,14 +608,14 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #22b3c1!important;
+    color: #358ac7!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #22b3c1;
+    background-color: #358ac7;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -669,7 +669,7 @@ Header Style
   }
   .header-area .main-nav .nav li a:hover {
     background: #f7f7f7 !important;
-    color: #22b3c1!important;
+    color: #358ac7!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -1107,7 +1107,7 @@ Footer Style
 */
 
 footer {
-  background-color: #22b3c1;
+  background-color: #358ac7;
   text-align: center;
   padding: 25px 0px;
 }
@@ -2326,5 +2326,323 @@ body {
   }
   .weekly-offers .container-fluid {
     padding: 0px;
+  }
+}
+
+
+/*
+---------------------------------------------
+New Styles
+--------------------------------------------- 
+*/
+
+/* Sección de módulos */
+.modules-section {
+  padding: 50px 20px;
+  background-color: #f7f9fc;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Diseño de las tarjetas de módulo */
+.module-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.module-card .image img {
+  width: 100%;
+  height: 180px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.module-card .content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.module-card .content h4 {
+  font-size: 1.2rem;
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.module-card .content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.module-card .content .btn {
+  background-color: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.module-card .content .btn:hover {
+  background-color: #2b6cb0;
+}
+
+/* Adaptabilidad en pantallas más pequeñas */
+@media (max-width: 991px) {
+  .module-card {
+      margin-bottom: 30px;
+  }
+}
+
+
+/* Estilos Generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2d89ef;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sección '¿Qué es HOPE?' */
+.que-es-hope {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #d6e9ff);
+  border-radius: 20px;
+}
+
+.que-es-hope h2 {
+  font-size: 2.5rem;
+  color: #2d89ef;
+  margin-bottom: 10px;
+}
+
+.que-es-hope p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Sección Módulos */
+.modulos-hope {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.modules {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.module {
+  width: 23%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.module h3 {
+  font-size: 1.5rem;
+  color: #2d89ef;
+  margin-bottom: 10px;
+}
+
+.module p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.module button {
+  background: #2d89ef;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.module button:hover {
+  background: #1b63d2;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección de invitación al registro */
+
+/* Sección de invitación a registro */
+.registro-invitacion {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #d4f1f9, #ffffff);
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.registro-contenedor h2 {
+  font-size: 2.5rem;
+  color: #2b6cb0;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registro-contenedor p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.registro-contenedor .btn {
+  background-color: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.registro-contenedor .btn:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-3px);
+}
+
+.registro-contenedor .nota {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #718096;
+  font-style: italic;
+}
+
+/* Adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+  .registro-invitacion {
+      padding: 30px 15px;
+  }
+
+  .registro-contenedor h2 {
+      font-size: 2rem;
+  }
+
+  .registro-contenedor p {
+      font-size: 1rem;
+  }
+
+  .registro-contenedor .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
   }
 }
