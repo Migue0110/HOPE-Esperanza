@@ -34,13 +34,13 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form id="formulario-login">
                 <h1>Inicia sesión</h1>
                 <div class="social-container">
                 </div>
                 <span>Ingresa tus credenciales</span>
-                <input type="email" placeholder="Correo" />
-                <input type="password" placeholder="Contraseña" />
+                <input name="correo" type="email" placeholder="Correo" />
+                <input name="contrasena" type="password" placeholder="Contraseña" />
                 <button class="mt-3">Ingresar</button>
                 <a href="#">¿Olvidaste tu contraseña?</a>
             </form>

@@ -54,6 +54,9 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+
+        // Cargar los helpers necesarios
+        helper(['url', 'form', 'session']);
     }
 
     // Método para cargar vista con header y footer
@@ -61,11 +64,69 @@ abstract class BaseController extends Controller
     {
         // Cargar el header con las variables necesarias
         echo view('layouts/header', ['urlapp' => base_url()]);
-        
+
         // Cargar la vista principal que pasas como parámetro
         echo view($view, $vars);
-        
+
         // Cargar el footer
         echo view('layouts/footer');
+    }
+
+    protected function limpiarArchivosWritable()
+    {
+        $writablePath = WRITEPATH; // Obtiene la ruta a la carpeta writable
+
+        // Eliminar archivos en la carpeta logs
+        $logsPath = $writablePath . 'logs/';
+        $this->eliminarArchivosEnDirectorio($logsPath);
+
+        // Eliminar archivos en la carpeta session
+        $sessionPath = $writablePath . 'session/';
+        $this->eliminarArchivosEnDirectorio($sessionPath);
+    }
+
+    protected function eliminarArchivosEnDirectorio($directory)
+    {
+        $files = glob($directory . '*'); // Obtiene todos los archivos en el directorio especificado
+
+        // Obtener la fecha actual menos 6 horas (en segundos)
+        $limiteAntiguedad = time() - (6 * 60 * 60);
+
+        // Elimina cada archivo con 6 o más horas de antigüedad excepto index.html
+        foreach ($files as $file) {
+            if (is_file($file) && filemtime($file) < $limiteAntiguedad && basename($file) !== 'index.html') {
+                unlink($file);
+            }
+        }
+    }
+
+    protected function limpiarArchivos()
+    {
+        $writablePath = WRITEPATH; // Obtiene la ruta a la carpeta writable
+
+        // Eliminar archivos en la carpeta logs
+        $logsPath = $writablePath . 'logs/';
+        $this->eliminarArchivos($logsPath);
+
+        // Eliminar archivos en la carpeta session
+        $sessionPath = $writablePath . 'session/';
+        $this->eliminarArchivos($sessionPath);
+    }
+
+    protected function eliminarArchivos($directory)
+    {
+        $files = glob($directory . '*'); // Obtiene todos los archivos en el directorio especificado
+
+        // Elimina cada archivo en el directorio excepto index.html
+        foreach ($files as $file) {
+            if (is_file($file) && basename($file) !== 'index.html') {
+                unlink($file);
+            }
+        }
+    }
+
+    public function session()
+    {
+        return \Config\Services::session();
     }
 }

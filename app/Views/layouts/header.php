@@ -13,6 +13,7 @@
     <link rel="icon" href="<?php echo RUTA_BASE; ?>assets/imagenes/hope_icon.png">
     <!-- Bootstrap core CSS -->
     <link href="<?php echo RUTA_BASE; ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?php echo RUTA_BASE; ?>assets/css/fontawesome.css">
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="<?php echo RUTA_BASE; ?>assets/css/owl.css">
     <link rel="stylesheet" href="<?php echo RUTA_BASE; ?>assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
 
 </head>
 
@@ -27,8 +29,16 @@
 var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
 </script>
 
+<style>
+.ajusteheader {
+    min-height: calc(100vh - 110px);
+    padding-top: 6rem;
+}
+</style>
+
+<?php $usuario = session()->get('usuario'); ?>
 <header class="header-area header-sticky">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
@@ -41,10 +51,27 @@ var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
                     <ul class="nav">
                         <li><a href="<?php echo RUTA_BASE; ?>public/pagina_principal" class="active">Home</a></li>
                         <li><a href="about.html">Calendario</a></li>
-                        <li><a href="deals.html">Analizador de Textos</a></li>
-                        <li><a href="reservation.html">Test Burns</a></li>
+                        <li><a href="deals.html">Analizador</a></li>
+                        <li><a href="reservation.html">Tests</a></li>
                         <li><a href="reservation.html">Autoayuda</a></li>
-                        <li><a href="<?php echo RUTA_PUBLICA; ?>">Login</a></li>
+                        <?php                 
+                        if (!$usuario): 
+                        ?>
+                            <li><a href="<?php echo RUTA_PUBLICA; ?>">Login</a></li>
+                        <?php else: ?>
+                            <li>
+                                <div class="dropdown perfil">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i> 
+                                        <?php echo htmlspecialchars($usuario->nombre); // Mostrar el nombre del usuario ?>
+                                    </button>
+                                    <ul class="dropdown-menu text-dark">
+                                        <li><a class="text-dark" href="<?php echo RUTA_PUBLICA; ?>login/salir">Cerrar sesión</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -56,4 +83,4 @@ var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
     </div>
 </header>
 
-<body class="container-fluid">
+<div class="container-fluid ajusteheader">

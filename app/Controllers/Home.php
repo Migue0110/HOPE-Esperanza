@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\Session\Session;
 
 class Home extends BaseController
 {

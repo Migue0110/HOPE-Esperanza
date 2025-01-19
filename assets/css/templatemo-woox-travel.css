@@ -2356,6 +2356,7 @@ New Styles
 
 /* Diseño de las tarjetas de módulo */
 .module-card {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
