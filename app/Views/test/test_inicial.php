@@ -20,7 +20,7 @@
             <?php foreach ($preguntas as $pregunta): ?>
             <div class="question-container">
                 <h3 class="question-title"><?= $pregunta->pregunta ?></h3>
-                <div class="custom-radio">
+                <div class="custom-radio" data-id="<?php echo $pregunta->id; ?>">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="0"
                             id="opcion0_<?= $pregunta->id ?>" required>
@@ -73,15 +73,28 @@ function startTest() {
 $(document).ready(function() {
     $('#encuesta_inicial').submit(function(e) {
         e.preventDefault();
-        var form = $(this);
-        var url = form.attr('action');
-        console.log(form.serialize());
+        
+        //? Recoger el div custom-radio y obtener el valor de la respuesta seleccionada
+        let respuestas = [];
+        $('.custom-radio').each(function() {
+            let respuesta = $(this).find('input:checked').val();
+            id = $(this).data('id');
+
+            respuestas.push({
+                id: id,
+                respuesta: respuesta
+            });
+        });
+
+        //? Enviar las respuestas al controlador
         $.ajax({
             type: 'POST',
-            url: url,
-            data: form.serialize(),
-            success: function(data) {
-                console.log(data);
+            url: RUTA_PUBLICA + 'test/encuesta_inicial',
+            data: {
+                respuestas: respuestas
+            },
+            success: function(response) {
+                
             }
         });
     });

@@ -21,6 +21,10 @@ class Test extends BaseController
         // }
     }
 
+    /**
+     * ? Funcion para cargar la vista de la encuesta inicial
+     * @return void
+     */
     public function test_inicial ()
     {
         //? Cargar el modelo de preguntas
@@ -30,4 +34,15 @@ class Test extends BaseController
         $preguntas = $preguntasModel->obtener_preguntas('1');
         $this->vista('test/test_inicial', ['preguntas' => $preguntas]);
     } 
+
+    /**
+     * ? Funcion para guardar los datos de la encuesta inicial
+     * @return void
+     */
+    public function encuesta_inicial(){
+        //? Recoger las respuestas del formulario
+        $respuestas = $this->request->getPost('respuestas');
+
+        
+    }
 }

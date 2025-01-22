@@ -38,6 +38,8 @@ $routes->post('login/restablecerContrasena', 'Login::restablecerContrasena');
 //! Rutas para el controlador de Test
 //? Funcion test_inicial
 $routes->get('test/test_inicial', 'Test::test_inicial');
+//? Funcion encuesta_inicial
+$routes->post('test/encuesta_inicial', 'Test::encuesta_inicial');
 
 //! Rutas para paginas no encontradas
 //? Funcion 404

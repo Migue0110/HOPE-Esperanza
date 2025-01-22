@@ -15,8 +15,6 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="<?php echo RUTA_BASE; ?>vendor/jquery/jquery.min.js"></script>
-<!-- <script src="<?php echo RUTA_BASE; ?>assets/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="<?php echo RUTA_BASE; ?>assets/bootstrap/js/bootstrap.bundle.js"></script>
 
 <script src="<?php echo RUTA_BASE; ?>assets/js/isotope.min.js"></script>
