@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use CodeIgniter\Session\Session;
 use App\Models\Preguntas_tests_model;
+use App\Models\Usuarios_model;
+use App\Models\Encuesta_inicial_model;
 
 class Test extends BaseController
 {
@@ -27,5 +29,5 @@ class Test extends BaseController
         //? Obtener las preguntas de la encuesta inicial
         $preguntas = $preguntasModel->obtener_preguntas('1');
         $this->vista('test/test_inicial', ['preguntas' => $preguntas]);
-    }
+    } 
 }

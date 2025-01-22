@@ -9,6 +9,7 @@ class Usuarios_model extends Model
 
     protected $table = 'usuarios';
     protected $id = 'id';
+    protected $fecha_inicial = 'fecha_encuesta_inicial';
 
     /**
      * ? Funcion para registrar un usuario en la base de datos

@@ -49,16 +49,16 @@ var RUTA_PUBLICA = "<?php echo RUTA_PUBLICA; ?>";
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="<?php echo RUTA_BASE; ?>public/pagina_principal" class="active">Home</a></li>
-                        <li><a href="about.html">Calendario</a></li>
-                        <li><a href="deals.html">Analizador</a></li>
-                        <li><a href="reservation.html">Tests</a></li>
-                        <li><a href="reservation.html">Autoayuda</a></li>
-                        <?php                 
+                        <?php              
                         if (!$usuario): 
                         ?>
                             <li><a href="<?php echo RUTA_PUBLICA; ?>">Login</a></li>
                         <?php else: ?>
+                            <li><a href="<?php echo RUTA_BASE; ?>public/pagina_principal" class="active">Home</a></li>
+                            <li><a href="<?php echo RUTA_BASE; ?>public/calendario" class="active">Calendario</a></li>
+                            <li><a href="<?php echo RUTA_BASE; ?>public/analizador_textos" class="active">Analizador</a></li>
+                            <li><a href="<?php echo RUTA_BASE; ?>public/tests" class="active">Tests</a></li>
+                            <li><a href="<?php echo RUTA_BASE; ?>public/auto_ayuda" class="active">Autoayuda</a></li>
                             <li>
                                 <div class="dropdown perfil">
                                     <button class="btn btn-light dropdown-toggle" type="button"

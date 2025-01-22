@@ -42,7 +42,7 @@
                 <input name="correo" type="email" placeholder="Correo" />
                 <input name="contrasena" type="password" placeholder="Contraseña" />
                 <button class="mt-3">Ingresar</button>
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="">¿Olvidaste tu contraseña?</a>
             </form>
         </div>
         <div class="overlay-container">

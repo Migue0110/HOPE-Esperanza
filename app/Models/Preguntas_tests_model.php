@@ -21,7 +21,4 @@ class Preguntas_tests_model extends Model
             ->get()
             ->getResult();
     }
-
-    
-    
 }

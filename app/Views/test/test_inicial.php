@@ -1,13 +1,89 @@
-<H2>TEST INICIAL</H2>
+<div class="welcome-container">
+    <h2>¡Bienvenido a HOPE!</h2>
+    <p>
+        Nos alegra que hayas dado el primer paso. Como es tu primera vez con nosotros,
+        queremos conocer tu estado de ánimo actualmente.
+        Este pequeño test solo te tomará unos minutos y nos ayudará a entender cómo te sientes.
+        ¡Gracias por confiar en nosotros!
+    </p>
+    <button class="start-btn" onclick="startTest()">Comenzar</button>
+    <div class="image">
+        <img src="<?php echo RUTA_BASE; ?>assets/imagenes/estados_animo.png" alt="estadosAnimo">
+    </div>
 
-<div>
-    <?php foreach ($preguntas as $pregunta): ?>
-        <div class="rounded border p-3">
-            <h3><?= $pregunta->pregunta ?></h3>
-            <input type="radio" name="input1_<?= $pregunta->id ?>" value="1">
-            <input type="radio" name="input2_<?= $pregunta->id ?>" value="2">
-            <input type="radio" name="input3_<?= $pregunta->id ?>" value="3">
-            <input type="radio" name="input4_<?= $pregunta->id ?>" value="4">
-        </div>
-    <?php endforeach; ?>
 </div>
+
+<div id="test-container" style="display: none;">
+    <h2>TEST INICIAL</h2>
+    <form id="encuesta_inicial">
+        <div>
+            <?php foreach ($preguntas as $pregunta): ?>
+            <div class="question-container">
+                <h3 class="question-title"><?= $pregunta->pregunta ?></h3>
+                <div class="custom-radio">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="0"
+                            id="opcion0_<?= $pregunta->id ?>" required>
+                        <label class="form-check-label" for="opcion0_<?= $pregunta->id ?>">
+                            0 - Casi nunca
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="1"
+                            id="opcion1_<?= $pregunta->id ?>">
+                        <label class="form-check-label" for="opcion1_<?= $pregunta->id ?>">
+                            1 - A veces
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="2"
+                            id="opcion2_<?= $pregunta->id ?>">
+                        <label class="form-check-label" for="opcion2_<?= $pregunta->id ?>">
+                            2 - Bastante
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="3"
+                            id="opcion3_<?= $pregunta->id ?>">
+                        <label class="form-check-label" for="opcion3_<?= $pregunta->id ?>">
+                            3 - Muchas veces
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="4"
+                            id="opcion4_<?= $pregunta->id ?>">
+                        <label class="form-check-label" for="opcion4_<?= $pregunta->id ?>">
+                            4 - Siempre
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <button class="submit-btn">Enviar Respuestas</button>
+    </form>
+</div>
+
+<script>
+function startTest() {
+    document.querySelector('.welcome-container').style.display = 'none';
+    document.querySelector('#test-container').style.display = 'block';
+}
+
+$(document).ready(function() {
+    $('#encuesta_inicial').submit(function(e) {
+        e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+        console.log(form.serialize());
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(),
+            success: function(data) {
+                console.log(data);
+            }
+        });
+    });
+});
+</script>

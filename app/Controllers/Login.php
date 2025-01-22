@@ -90,4 +90,14 @@ class Login extends BaseController
         $this->limpiarArchivos();
         return redirect()->to(base_url('public/pagina_principal'));
     }
+
+    /**
+     * ? Funcion para olvide contraseña
+     * @return void
+     */
+    public function olvide_contrasena()
+    {
+        
+    }
+    
 }
