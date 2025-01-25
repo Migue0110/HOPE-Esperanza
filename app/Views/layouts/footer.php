@@ -23,6 +23,7 @@
 <script src="<?php echo RUTA_BASE; ?>assets/js/popup.js"></script>
 <script src="<?php echo RUTA_BASE; ?>assets/js/custom.js"></script>
 
+
 <script>
 function bannerSwitcher() {
     next = $('.sec-1-input').filter(':checked').next('.sec-1-input');

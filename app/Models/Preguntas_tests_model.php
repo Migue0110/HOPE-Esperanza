@@ -8,6 +8,7 @@ class Preguntas_tests_model extends Model
 {
 
     protected $table = 'preguntas_tests';
+    protected $tabla_intermedia = 'usuarios_preguntas';
     protected $id = 'id';
 
     /**
@@ -20,5 +21,14 @@ class Preguntas_tests_model extends Model
             ->where('encuesta', $encuesta)
             ->get()
             ->getResult();
+    }
+
+    /**
+     * ? funcion para guardar las respuestas dependiendo la encuesta
+     * @param array $data
+     * @return void
+     */
+    public function guardar_respuestas($data){
+        $this->db->table($this->tabla_intermedia)->insert($data);
     }
 }

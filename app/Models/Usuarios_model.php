@@ -46,4 +46,16 @@ class Usuarios_model extends Model
             ->where($this->id, $id)
             ->update($datos);
     }
+    /**
+     * ? Funcion para actualizar la fecha de la encuesta
+     * @param int $id
+     * @param string $fecha_inicial
+     * @return void
+     */
+    public function actualizar_fecha_encuesta($id, $fecha_inicial)
+    {
+        return $this->db->table('usuarios')
+            ->where($this->id, $id)
+            ->update(['fecha_encuesta_inicial' => $fecha_inicial]);
+    }
 }

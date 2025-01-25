@@ -23,7 +23,7 @@
                 <div class="custom-radio" data-id="<?php echo $pregunta->id; ?>">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="respuesta_<?= $pregunta->id ?>" value="0"
-                            id="opcion0_<?= $pregunta->id ?>" required>
+                            id="opcion0_<?= $pregunta->id ?>">
                         <label class="form-check-label" for="opcion0_<?= $pregunta->id ?>">
                             0 - Casi nunca
                         </label>
@@ -65,36 +65,61 @@
 </div>
 
 <script>
+/**
+ * ? Funcion para ocultar el contenedor de bienvenida y mostrar el contenedor del test
+ *  @return void
+ */
 function startTest() {
     document.querySelector('.welcome-container').style.display = 'none';
     document.querySelector('#test-container').style.display = 'block';
 }
 
+/**
+ * ? Funcion para enviar las respuestas del test al controlador
+ * @return void
+ */
 $(document).ready(function() {
     $('#encuesta_inicial').submit(function(e) {
         e.preventDefault();
-        
+
         //? Recoger el div custom-radio y obtener el valor de la respuesta seleccionada
         let respuestas = [];
         $('.custom-radio').each(function() {
             let respuesta = $(this).find('input:checked').val();
             id = $(this).data('id');
-
             respuestas.push({
-                id: id,
-                respuesta: respuesta
+                id_pregunta: id,
+                puntaje: respuesta
             });
         });
 
-        //? Enviar las respuestas al controlador
+        //? enviar las respuestas al controlador
         $.ajax({
             type: 'POST',
             url: RUTA_PUBLICA + 'test/encuesta_inicial',
+            dataType: 'json',
             data: {
                 respuestas: respuestas
             },
-            success: function(response) {
-                
+            success: function(data) {
+                if (data['resp'] == 1) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Exito",
+                        html: data.msg
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = RUTA_PUBLICA +
+                                'pagina_principal';
+                        }
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Error",
+                        text: 'Hay preguntas sin responder',
+                    });
+                }
             }
         });
     });
