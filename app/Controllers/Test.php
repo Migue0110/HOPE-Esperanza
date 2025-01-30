@@ -21,11 +21,6 @@ class Test extends BaseController
         // }
     }
 
-    public function index()
-    {
-        $this->vista('test/index');
-    }
-
     /**
      * ? Funcion para cargar la vista de la encuesta inicial
      * @return void
@@ -41,6 +36,34 @@ class Test extends BaseController
     }
 
     /**
+     * ? Funcion para cargar la vista del test de ansiedad
+     * @return void
+     */
+    public function test_ansiedad()
+    {
+        //? cargar el modelo de preguntas
+        $preguntasModel = new Preguntas_tests_model();
+
+        //? Obtener las preguntas de la encuesta de ansiedad
+        $preguntas = $preguntasModel->obtener_preguntas('2');
+        $this->vista('test/test_ansiedad', ['preguntas' => $preguntas]);
+    }
+
+    /**
+     * ? Funcion para cargar la vista del test de depresion
+     * @return void
+     */
+    public function test_depresion()
+    {
+        //? cargar el modelo de preguntas
+        $preguntasModel = new Preguntas_tests_model();
+
+        //? Obtener las preguntas de la encuesta de depresion
+        $preguntas = $preguntasModel->obtener_preguntas('3');
+        $this->vista('test/test_depresion', ['preguntas' => $preguntas]);
+    }
+
+    /**
      * ? Funcion para guardar los datos de la encuesta inicial
      * @return void
      */
@@ -51,10 +74,10 @@ class Test extends BaseController
 
         //? Verificar si todas las respuestas fueron proporcionadas
         foreach ($respuestas as $respuesta) {
-        if (empty($respuesta['puntaje'])) {
-            return json_encode(['resp' => 0, 'msg' => 'Hay preguntas sin responder']);
+            if (empty($respuesta['puntaje'])) {
+                return json_encode(['resp' => 0, 'msg' => 'Hay preguntas sin responder']);
+            }
         }
-    }
         //? Extraer el Id de la variable session
         $usuario = session()->get('usuario');
 
@@ -76,10 +99,66 @@ class Test extends BaseController
         //? Actualizar la fecha de la encuesta en la tabla usuarios
         $usuariosModel = new Usuarios_model();
         $usuariosModel->actualizar_fecha_encuesta($usuario->id_usuario, date('Y-m-d'));
-        
+
         //? Retornar la respuesta
         return json_encode(['resp' => 1, 'msg' => 'Respuestas guardadas correctamente', 'puntaje' => $puntaje_total]);
     }
 
+    /**
+     * ? Funcion para guardar los datos de la encuesta de ansiedad
+     * @return void
+     */
+    public function encuesta_ansiedad()
+    {
+        //? Recoger las respuestas del formulario
+        $respuestas = $this->request->getPost('respuestas');
 
+        //? Verificar si todas las respuestas fueron proporcionadas
+        foreach ($respuestas as $respuesta) {
+            if (empty($respuesta['puntaje'])) {
+                return json_encode(['resp' => 0, 'msg' => 'Hay preguntas sin responder']);
+            }
+        }
+        //? Extraer el Id de la variable session
+        $usuario = session()->get('usuario');
+
+        //? Cargar el modelo de preguntas
+        $preguntasModel = new Preguntas_tests_model();
+
+        //? Guardar las respuestas en la base de datos
+        $puntaje_total = 0;
+        $puntaje_total += $respuesta['puntaje'];
+
+        if ($puntaje_total >= 0 && $puntaje_total <= 4) {
+            $nivel_resultado = 'Mínimo o no ansiedad';
+        } elseif ($puntaje_total >= 5 && $puntaje_total <= 10) {
+            $nivel_resultado = 'Ansiedad al borde';
+        } elseif ($puntaje_total >= 11 && $puntaje_total <= 20) {
+            $nivel_resultado = 'Ansiedad leve';
+        } elseif ($puntaje_total >= 21 && $puntaje_total <= 30) {
+            $nivel_resultado = 'Ansiedad Moderada';
+        } elseif ($puntaje_total >= 31 && $puntaje_total <= 50) {
+            $nivel_resultado = 'Ansiedad Grave';
+        } elseif ($puntaje_total >= 51) {
+            $nivel_resultado = 'Ansiedad Extrema-panico';
+        }
+
+        foreach ($respuestas as $respuesta) {
+            $data = [
+                'id_usuario' => $usuario->id_usuario,
+                'tipo' => '2',
+                'puntaje_total' => $puntaje_total,
+                'nivel_resultado' => $nivel_resultado
+            ];
+
+            $preguntasModel->guardar_respuestas_burns($data);
+
+
+            //? Actualizar la fecha de la encuesta en la tabla pruebas_burns
+            $preguntasModel->actualizar_fecha_encuesta($usuario->id_usuario, date('Y-m-d'));
+
+            //? Retornar la respuesta
+            return json_encode(['resp' => 1, 'msg' => 'Respuestas guardadas correctamente']);
+        }
+    }
 }

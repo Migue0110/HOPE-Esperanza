@@ -18,6 +18,10 @@ $routes->get('analizador_textos', 'Home::analizador_textos');
 $routes->get('auto_ayuda', 'Home::autoayuda');
 //? Funcion tests
 $routes->get('tests', 'Home::tests');
+//? funcion testsBurns
+$routes->get('Test/test_ansiedad', 'Test::test_ansiedad');
+//? funcion test_depresion
+$routes->get('Test/test_depresion', 'Test::test_depresion');
 
 //! Rutas para el controlador de Usuarios
 //? Funcion registrar
@@ -40,13 +44,11 @@ $routes->post('login/restablecerContrasena', 'Login::restablecerContrasena');
 $routes->get('test/test_inicial', 'Test::test_inicial');
 //? Funcion encuesta_inicial
 $routes->post('test/encuesta_inicial', 'Test::encuesta_inicial');
+//? Funcion encuesta_ansiedad
+$routes->post('test/encuesta_ansiedad', 'Test::encuesta_ansiedad');
 
 //! Rutas para paginas no encontradas
 //? Funcion 404
 $routes->set404Override(function() {
     echo view('errors/html/error_404');
 });
-
-//! Rutas para el controlador de Test burns
-//? Funcion test_burns
-$routes->get('Test/index', 'Test::index');
