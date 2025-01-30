@@ -46,3 +46,7 @@ $routes->post('test/encuesta_inicial', 'Test::encuesta_inicial');
 $routes->set404Override(function() {
     echo view('errors/html/error_404');
 });
+
+//! Rutas para el controlador de Test burns
+//? Funcion test_burns
+$routes->get('Test/index', 'Test::index');

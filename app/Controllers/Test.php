@@ -21,6 +21,11 @@ class Test extends BaseController
         // }
     }
 
+    public function index()
+    {
+        $this->vista('test/index');
+    }
+
     /**
      * ? Funcion para cargar la vista de la encuesta inicial
      * @return void
