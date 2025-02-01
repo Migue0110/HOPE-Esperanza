@@ -163,4 +163,10 @@ class Test extends BaseController
         //? Retornar la respuesta
         return json_encode(['resp' => 1, 'msg' => 'Respuestas guardadas correctamente']);
     }
+
+    //? Funcion para cargar la vista de seleccion de test
+    public function seleccion_test()
+    {
+        $this->vista('test/seleccion_test');
+    }
 }

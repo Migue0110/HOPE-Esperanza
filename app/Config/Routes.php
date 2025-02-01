@@ -22,6 +22,8 @@ $routes->get('tests', 'Home::tests');
 $routes->get('Test/test_ansiedad', 'Test::test_ansiedad');
 //? funcion test_depresion
 $routes->get('Test/test_depresion', 'Test::test_depresion');
+//? fuincion seleccion_test
+$routes->get('Test/seleccion_test', 'Test::seleccion_test');
 
 //! Rutas para el controlador de Usuarios
 //? Funcion registrar
