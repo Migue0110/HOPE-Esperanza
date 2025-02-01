@@ -92,7 +92,7 @@ $(document).ready(function() {
                 puntaje: respuesta
             });
         });
-
+    });
         //? enviar las respuestas al controlador
         $.ajax({
             type: 'POST',
@@ -123,5 +123,4 @@ $(document).ready(function() {
             }
         });
     });
-});
 </script>

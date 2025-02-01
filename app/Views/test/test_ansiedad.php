@@ -83,41 +83,45 @@ $(document).ready(function() {
 
         let respuestas = [];
 
-        $('tbody tr').each(function() {
+        $('#test_ansiedad tbody tr').each(function() {
             let id = $(this).data('id');
             let respuesta = $(this).find('input:checked').val();
+
+            respuestas.push({
+                id_pregunta: id,
+                puntaje: parseInt(respuesta) // Asegurar que sea un número
+            });
         });
         console.log(respuestas);
 
-        // Enviar respuestas al servidor
+        //? Enviar las respuestas al controlador
         $.ajax({
             type: 'POST',
             url: RUTA_PUBLICA + 'test/encuesta_ansiedad',
+            data: { respuestas: respuestas },
             dataType: 'json',
-            data: {
-                respuestas: respuestas
-            },
             success: function(data) {
                 if (data['resp'] == 1) {
                     Swal.fire({
                         icon: "success",
-                        title: "Éxito",
+                        title: "Exito",
                         html: data.msg
                     }).then((result) => {
                         if (result.isConfirmed) {
                             window.location.href = RUTA_PUBLICA +
-                            'pagina_principal';
+                                'pagina_principal';
                         }
                     });
                 } else {
                     Swal.fire({
                         icon: "error",
                         title: "Error",
-                        text: "Hay preguntas sin responder",
+                        text: 'Hay preguntas sin responder',
                     });
                 }
             }
         });
     });
 });
+
     </script>
